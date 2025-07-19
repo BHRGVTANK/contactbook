@@ -1,0 +1,16 @@
+/* src/pages/AddContactPage.css */
+
+.add-contact-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #e0f7fa);
+  padding: 60px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.add-contact-card {
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+}

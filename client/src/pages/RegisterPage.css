@@ -1,0 +1,19 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #e0ecff, #f7faff);
+  padding: 50px 0;
+}
+
+.register-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+}
+
+.register-card h3 {
+  font-weight: 600;
+  color: #153b72;
+}

@@ -1,0 +1,104 @@
+/* Navbar Core Styles */
+.custom-navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right,
+    #4268f6,
+    #8e55ea
+  ); /* Violet-Blue Gradient */
+  padding: 0.7rem 0;
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.6rem;
+  color: #ffffff !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+.custom-navbar .navbar-brand:hover {
+  color: #e0e0e0 !important;
+}
+
+/* Mobile Menu Toggle */
+.custom-navbar .navbar-toggler {
+  border: none;
+  background-color: #ffffff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+}
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Navigation Links */
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.6rem 1.1rem;
+  margin: 0 0.25rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: #ffeeba !important;
+}
+
+/* Link Underline Animation */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 10%;
+  background-color: #ffeeba;
+  transition: width 0.3s ease;
+}
+.custom-navbar .nav-link:hover::after {
+  width: 80%;
+}
+
+/* Custom Logout Button */
+.custom-logout-btn {
+  background: #ffffff22;
+  color: #ffffff;
+  border: 1px solid #ffffff55;
+  padding: 0.45rem 1.2rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.custom-logout-btn:hover {
+  background: #ffffff44;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .custom-navbar .navbar-collapse {
+    padding-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+
+  .custom-navbar .nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+  }
+
+  .custom-navbar .nav-link::after {
+    display: none;
+  }
+
+  .custom-navbar .btn-outline-danger {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid #f8d7da;
+  }
+}
